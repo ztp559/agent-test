@@ -1,0 +1,36 @@
+{
+    "mcpServers": {
+      "mcp-server-playwright": {
+        "command": "docker",
+        "args": [
+          "run",
+          "-i",
+          "--rm",
+          "ghcr.io/metorial/mcp-container--automata-labs-team--mcp-server-playwright--mcp-server-playwright",
+          "node dist/index.js"
+        ],
+        "env": {}
+      },
+      "basic-memory": {
+        "command": "docker",
+        "args": [
+          "run",
+          "-i",
+          "--rm",
+          "ghcr.io/metorial/mcp-container--basicmachines-co--basic-memory--basic-memory",
+          "basic-memory mcp"
+        ],
+        "env": {}
+      },
+      "time-server": {
+        "command": "docker",
+        "args": [
+          "run",
+          "-i",
+          "--rm",
+          "mcp-time-server:latest"
+        ],
+        "env": {}
+      }
+    }
+  }

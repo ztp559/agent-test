@@ -1,0 +1,7 @@
+sudo apt update
+pip install langchain
+pip install langchain-community
+pip install modelscope numpy addict transformers torch oss2 -i 
+pip install datasets==2.18.0
+sudo apt install sox
+sudo apt install ffmpeg
